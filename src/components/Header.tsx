@@ -6,7 +6,7 @@ const Header: FC = () => {
     <header>
       <h1>
         <Link href='/'>
-          <a>zhangzinn's blog</a>
+          <a>zhangzinn blog</a>
         </Link>
       </h1>
     </header>

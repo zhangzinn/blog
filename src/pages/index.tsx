@@ -2,7 +2,7 @@ import { GetStaticProps, NextPage } from 'next';
 import path from 'path';
 import { promises as fs } from 'fs';
 import dayjs from 'dayjs';
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 type Props = {
   posts: {
@@ -13,23 +13,12 @@ type Props = {
 };
 
 const Home: NextPage<Props> = ({ posts }) => {
-  const router = useRouter();
-
   return (
     <div id='post-list-container'>
       {posts.map(({ date, title, fileName }) => (
-        <div
-          key={date}
-          className='card'
-          onClick={e => {
-            e.preventDefault();
-            router.push(`/posts/${fileName.replace('.md', '')}`);
-          }}>
-          <span className='date'>
-            {dayjs(date).format('YYYY-MM-DD HH:mm (ddd)')}
-          </span>
-          {title}
-        </div>
+        <Link key={date} href={`/posts/${fileName.replace('.md', '')}`}>
+          <a>{`${dayjs(date).format('YYYY-MM-DD HH:mm (ddd)')} ${title}`}</a>
+        </Link>
       ))}
     </div>
   );

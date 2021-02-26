@@ -10,7 +10,7 @@ type Props = {
   contents: string;
 };
 
-const Post: NextPage<Props> = ({ title, contents }) => {
+const Post: NextPage<Props> = ({ contents }) => {
   const renderers = {
     code: ({ language, value }) => {
       return <SyntaxHighlighter language={language}>{value}</SyntaxHighlighter>;
@@ -18,9 +18,11 @@ const Post: NextPage<Props> = ({ title, contents }) => {
   };
 
   return (
-    <ReactMarkdown plugins={[gfm]} renderers={renderers}>
-      {contents}
-    </ReactMarkdown>
+    <div>
+      <ReactMarkdown plugins={[gfm]} renderers={renderers}>
+        {contents}
+      </ReactMarkdown>
+    </div>
   );
 };
 

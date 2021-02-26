@@ -1,7 +1,7 @@
 html,
 body {
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
+  font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ',
+    'Meiryo', 'verdana', Roboto, sans-serif;
   font-size: 18px;
   line-height: 2.4;
   background-color: #f1f5f9;
@@ -37,37 +37,14 @@ td {
 #content {
   width: 80%;
   margin: 0 auto;
-  padding-top: 16px;
+  overflow: scroll;
 }
 
 h1 a {
   color: inherit;
-}
-
-h1 a:hover {
   text-decoration: none;
 }
 
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-.card {
-  height: 64px;
-  line-height: 64px;
-  padding-left: 16px;
-  cursor: pointer;
-  border: 1px solid black;
-  background-color: white;
-}
-
-.card .date {
-  margin-right: 24px;
-}
-
-#post-list-container .card {
-  margin-bottom: 24px;
+#post-list-container a {
+  display: block;
 }
