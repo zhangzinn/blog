@@ -11,8 +11,6 @@ html {
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -40,7 +38,7 @@ td {
 #content {
   width: 80%;
   margin: 0 auto;
-  overflow: scroll;
+  overflow: hidden;
   font-size: 1.8rem;
 }
 
