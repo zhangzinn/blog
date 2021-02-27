@@ -1,0 +1,1 @@
+{"pageProps":{"title":"20210227113617_NextJs+GithubPagesでブログ作ってみた","contents":"# Next.js と GitHub Pages でブログ作ってみました（このサイト）\n\nはてなブログでも wordpress でも良かったですし、Next.js 使うなら Vercel デプロイしても良かったんですが、\n\n- React のサンドボックスあったら便利かな\n- ブログも GitHub に集約したい\n\nあたりの理由で、Next.js x GitHub Pages で作ってみました。\n"},"__N_SSG":true}
